@@ -1,0 +1,702 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+html{height:100%}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'ExtraBold';
+    src: url(./font/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'Regular';
+    src: url(./font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Medium';
+    src: url(./font/Montserrat-Medium.ttf);
+}
+body{
+    font-family: 'Regular';
+    margin: 0;
+}
+.Banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw;
+}
+
+.banner-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5vw;
+}
+
+.banner1 {
+    position: relative;
+    flex: 1;
+}
+
+.banner2 {
+    position: relative;
+    flex: 1 0 50%;
+    margin-bottom: 1vw;
+}
+
+.banner3 {
+    position: relative;
+    flex: 1 0 50%;
+    margin-top: 1vw;
+}
+
+
+.text1{
+    font-size: 3.7vw;
+    font-family: 'ExtraBold';
+    color: white;
+    word-break: break-word;
+    line-height: 1;
+}
+.cont1{
+    width: 20vw;
+    height: 7vw;
+    position: absolute;
+    top: 4.5vw;
+    right: 5vw;
+    padding: 0.1vw;
+    margin: 0vw;
+}
+
+.text2{
+    position: absolute;
+    top: 13.9vw;
+    right: 11.75vw;
+    font-size: 1vw;
+    font-family: 'Regular';
+    font-weight: bold;
+    color: white;
+    padding: 0.1vw;
+}
+
+.text3{
+    font-size: 1.1vw;
+    font-family: 'Regular';
+    color: white;
+    word-break: break-word;
+    line-height: 1;
+    text-align: center;
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+    padding: 0.1vw;
+    margin: 0vw;
+}
+
+.inc{
+    font-size: 1.5vw;
+}
+
+.cont2{
+    width: 7vw;
+    height: 6vw;
+    position: absolute;
+    bottom: 0vw;
+    right: 2.5vw;
+    padding: 0.1vw;
+    margin: 0vw;
+    overflow: hidden;
+}
+
+.text4 {
+    font-size: 1.5vw;
+    font-family: 'ExtraBold';
+    word-break: break-word;
+}
+
+.cont3{
+    width: 7vw;
+    height: 6vw;
+    position: absolute;
+    top: 1vw;
+    left: 1.2vw;
+    padding: 0.1vw;
+    margin: 0vw;
+}
+
+.det{
+    position: absolute;
+    bottom: 0.5vw;
+    left: 1.2vw;
+    padding: 0.1vw;
+    margin: 0vw;
+    color: rgb(255, 72, 0);
+}
+
+.logo-place{
+    position: absolute;
+    bottom: 0.5vw;
+    right: 1vw;
+    padding: 0.1vw;
+    margin: 0vw;
+}
+
+.bow-place{
+    position: absolute;
+    top: 1vw;
+    margin: 0vw;
+}
+
+.Ak{
+    font-size: 2.3vw;
+    font-family: 'ExtraBold';
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 3.3vw;
+    right: 1vw;
+    padding: 0.1vw;
+    margin: 0vw;
+}
+
+.text5{
+    font-size: 0.8vw;
+    font-family: 'Regular';
+    word-break: break-word;
+    color: white;
+    text-align: right;
+}
+
+.cont4{
+    width: 9vw;
+    height: 2vw;
+    position: absolute;
+    bottom: 2vw;
+    right: 1.2vw;
+    padding: 0.1vw;
+    margin: 0vw;
+}
+
+.banner3 .det2{
+    position: absolute;
+    bottom: 0.5vw;
+    right: 1.2vw;
+    padding: 0.1vw;
+    margin: 0vw;
+    color: rgb(255, 72, 0);
+}
+
+
+.Selector, .stl , .Brand , .New , .Hit {
+    text-align: center;
+    font-family: 'Medium';
+}
+.Selector h2, .stl h2, .Brand h2, .New h2, .Hit h2{
+    position: relative;
+    margin: 2vw;
+    font-size: 1.2vw;
+}
+.Selector h2::before{
+    content: "";
+    display: block;
+    background-color: #333;
+    width: 25em;
+    height: 0.05em;
+    bottom: 0.5em;
+    left: 0em;
+    position: absolute;
+}
+
+.Selector h2::after {
+    content: "";
+    display: block;
+    background-color: #333;
+    width: 25em;
+    height: 0.05em;
+    bottom: 0.5em;
+    right: 0em;
+    position: absolute;
+}
+.stl h2::before, .Brand h2::before, .New h2::before, .Hit h2::before{
+    content: "";
+    display: block;
+    background-color: #333;
+    width: 32em;
+    height: 0.05em;
+    bottom: 0.5em;
+    left: 0em;
+    position: absolute;
+}
+
+.stl h2::after, .Brand h2::after, .New h2::after, .Hit h2::after {
+    content: "";
+    display: block;
+    background-color: #333;
+    width: 32em;
+    height: 0.05em;
+    bottom: 0.5em;
+    right: 0em;
+    position: absolute;
+}
+
+.tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.tile-container a{
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: black;
+}
+
+.line{
+    content: "";
+    display: block;
+    background-color: #333;
+    width: 50%;
+    height: 0.1vw;
+}
+
+.gr1 {
+    background-image: url('img/DifferentLighters/lustry.png');
+    background-size: cover;
+    background-position: center;
+    width: 19vw;
+    height: 19vw;
+    margin: 1vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-top: 15vw;
+}
+.gr2 {
+    background-image: url('img/DifferentLighters/bra.png');
+    background-size: cover;
+    background-position: center;
+    width: 19vw;
+    height: 19vw;
+    margin: 1vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-top: 15vw;
+}
+
+.gr3 {
+    background-image: url('img/DifferentLighters/lamps.png');
+    background-size: cover;
+    background-position: center;
+    width: 19vw;
+    height: 19vw;
+    margin: 1vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-top: 15vw;
+}
+
+.gr4 {
+    background-image: url('img/DifferentLighters/roofLight.png');
+    background-size: cover;
+    background-position: center;
+    width: 19vw;
+    height: 19vw;
+    margin: 1vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-top: 15vw;
+}
+
+.gr5 {
+    background-image: url('img/DifferentLighters/desctopLighter.png');
+    background-size: cover;
+    background-position: center;
+    width: 19vw;
+    height: 19vw;
+    margin: 1vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-top: 15vw;
+}
+
+.gr6 {
+    background-image: url('img/DifferentLighters/insertLighter.png');
+    background-size: cover;
+    background-position: center;
+    width: 19vw;
+    height: 19vw;
+    margin: 1vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-top: 15vw;
+}
+
+.gr7 {
+    background-image: url('img/DifferentLighters/outdoorLighter.png');
+    background-size: cover;
+    background-position: center;
+    width: 19vw;
+    height: 19vw;
+    margin: 1vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-top: 15vw;
+}
+
+.gr8 {
+    background-image: url('img/DifferentLighters/Lighter.png');
+    background-size: cover;
+    background-position: center;
+    width: 19vw;
+    height: 19vw;
+    margin: 1vw;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-top: 15vw;
+}
+
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    background-color: #fff;
+}
+
+.gallery-item {
+    position: relative;
+    width: 21vw;
+    box-sizing: border-box;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.new-label {
+    position: absolute;
+    top: 0.1vw;
+    right: 0.1vw;
+    background-color: rgb(3, 187, 3);
+    font-size: 0.8vw;
+    font-family: 'Regular';
+    color: white;
+    padding: 0.1vw;
+}
+
+.new-label2{
+    position: absolute;
+    top: 0.1vw;
+    right: 0.1vw;
+    background-color: rgb(253, 114, 0);
+    font-size: 0.8vw;
+    font-family: 'Regular';
+    color: white;
+    padding: 0.1vw;
+}
+
+.new-label3{
+    position: absolute;
+    top: 1.7vw;
+    right: 0.1vw;
+    background-color: rgb(128, 128, 128);
+    font-size: 0.6vw;
+    font-family: 'Regular';
+    color: white;
+    padding: 0.1vw;
+}
+
+
+.gallery-item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.gallery-item img {
+    width: 100%;
+    margin-bottom: 0.5vw;
+}
+
+.gallery-item .description {
+    font-family: 'Regular';
+    font-size: 1.1vw;
+    color: #333;
+    margin-bottom: 0.5vw;
+    text-decoration: underline;
+}
+
+.gallery-item .price {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 0.5vw;
+}
+
+.gallery-item .old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 1vw;
+    margin-bottom: 0.5vw;
+}
+
+.gallery-item .add-to-cart {
+    display: inline-block;
+    padding: 0.8vw;
+    width: 10vw;
+    border: none;
+    background-color: rgba(255, 217, 0, 0.76);
+    color: black;
+    text-decoration: none;
+    border-radius: 3em;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.style-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.style-container a{
+    text-decoration: none;
+    font-size: 1.2vw;
+    font-family: 'Regular';
+    color: white;
+}
+
+
+.style1{
+    background-image: url('img/StyleImage2/scandinav.png');
+    background-size: cover;
+    background-position: center;
+    width: 20vw;
+    height: 11vw;
+    margin: 1vw;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 8vw;
+}
+
+.style1 .line2{
+    content: "";
+    display: block;
+    background-color: white;
+    width: 10%;
+    height: 0.1vw;
+}
+
+.style2{
+    background-image: url('img/StyleImage2/loft.png');
+    background-size: cover;
+    background-position: center;
+    width: 20vw;
+    height: 11vw;
+    margin: 1vw;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 8vw;
+}
+
+.style2 .line2{
+    content: "";
+    display: block;
+    background-color: white;
+    width: 30%;
+    height: 0.1vw;
+}
+
+.style3{
+    background-image: url('img/StyleImage2/provans.png');
+    background-size: cover;
+    background-position: center;
+    width: 20vw;
+    height: 11vw;
+    margin: 1vw;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 8vw;
+}
+
+.style3 .line2{
+    content: "";
+    display: block;
+    background-color: white;
+    width: 30%;
+    height: 0.1vw;
+}
+
+.style4{
+    background-image: url('img/StyleImage2/now.png');
+    background-size: cover;
+    background-position: center;
+    width: 20vw;
+    height: 11vw;
+    margin: 1vw;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-top: 8vw;
+}
+
+.style4 .line2{
+    content: "";
+    display: block;
+    background-color: white;
+    width: 10%;
+    height: 0.1vw;
+}
+
+.brand1{
+    background-image: url('img/StyleImages/1.png');
+    background-size: cover;
+    background-position: center;
+    width: 15vw;
+    height: 11vw;
+    margin: 1vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.brand2{
+    background-image: url('img/StyleImages/2.png');
+    background-size: cover;
+    background-position: center;
+    width: 15vw;
+    height: 11vw;
+    margin: 1vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.brand3{
+    background-image: url('img/StyleImages/3.png');
+    background-size: cover;
+    background-position: center;
+    width: 15vw;
+    height: 11vw;
+    margin: 1vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.brand4{
+    background-image: url('img/StyleImages/4.png');
+    background-size: cover;
+    background-position: center;
+    width: 15vw;
+    height: 11vw;
+    margin: 1vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.brand5{
+    background-image: url('img/StyleImages/5.png');
+    background-size: cover;
+    background-position: center;
+    width: 15vw;
+    height: 11vw;
+    margin: 1vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+
+.gallery-arrow1, .gallery-arrow2 {
+    position:relative;
+    font-size: 2em;
+    color: #333;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    padding: 0.5em;
+    z-index: 2;
+}
+.arrow-left {
+    left: 10px;
+}
+.arrow-right {
+    right: 10px;
+}
+
+
+.About {
+    padding: 2vw;
+    font-family: 'Regular';
+    font-size: 1.4vw;
+    font-weight: bold;
+    background-color: rgba(255, 217, 0, 0.76);
+    display: flex;
+}
+.About img{
+    opacity: 0.2;
+    transform: scale(-1, 1);
+    width: 40%;
+}
+.About p{
+    margin-bottom: 1vw;
+}
+.About h2{
+    position: relative;
+    margin-bottom: 5vw;
+}
+.About h2::after {
+    content: "";
+    display: block;
+    background-color: #333;
+    width: 40vw;
+    height: 0.05em;
+    bottom: 0.5em;
+    right: 0em;
+    position: absolute;
+}
+.detail {
+    font-size: 1.5vw;
+    border: 0.1em solid black;
+    border-radius: 1em;
+    padding: 0 1em;
+    display: inline-block;
+    background-color: black;
+}
+.detail a {
+    color: white;
+    text-decoration: none;
+}
+
+

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="script.js" />
+    <title>Сайт</title>
+</head>
+<body>
+    <header>
+        <div class="up">
+            <div class="logo"><img src=".\logo\logo.png" alt="Logo"></div>
+            <form action="/" method="GET">
+                <div class="form">
+                    <a href="" class="srchbttn" onclick="submit(this.form); return false;">
+                        <img class="searchicon" src="icon/search.png" alt="Поиск">
+                    </a>
+                    <input type="text" id="search" class="search" placeholder="Поиск">
+                </div>
+            </form>
+            <div class="label">
+                <img src="icon/location.png" alt="Месположение">
+                <a href="#" class="location">Москва</a>
+            </div>
+            <div id="tel" class="label">
+                <img src="icon/telephone.png" alt="Телефон">
+                <a href="tel:+7 (495) 128-11-38">+7 (495) 128-11-38</a></div>
+            <div class="label">
+                <img src="icon/clock.png" alt="Время работы">
+                Ежедневно с 9:00 до 22:00
+            </div>
+            <a href="#" class="cart" >26 546Р<img src="icon/shopping-bag.png"></a>
+            <a href="#" class="icon"><img src="icon/statistics.png"></a>
+            <a href="#" class="icon"><img src="icon/heart(default).png"></a>
+        </div>
+
+        <div class="down">
+            <nav class="navigation">
+                <a href="#" class="frame">КАТАЛОГ ТОВАРОВ</a>
+                <div class="drop">
+                    <button>БРЕНДЫ +</button>
+                    <div class="droplist">
+                        <div class="link-container">
+                            <a href="" class="droplink">ARTE</a>
+                            <a href="" class="droplink">CITILUX</a>
+                            <a href="" class="droplink">EGLO</a>
+                            <a href="" class="droplink">EVROSVET</a>
+                            <a href="" class="droplink">FAVOURITE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop">
+                    <button>СТИЛИ +</button>
+                    <div class="droplist">
+                        <div class="link-container">
+                            <a href="" class="droplink">Scandinavian</a>
+                            <a href="" class="droplink">Loft</a>
+                            <a href="" class="droplink">Provence</a>
+                            <a href="" class="droplink">Modern</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="company">О КОМПАНИИ</a>
+                <div class="dec">
+                    <a href="#">ГАРАНТИЯ/ВОЗВРАТ</a>
+                    <a href="#">ДОСТАВКА/ОПЛАТА</a> 
+                    <a href="#">ОТЗЫВЫ</a>
+                    <a href="#">КОНТАКТЫ</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="Banner">
+        <div class="banner-container">
+            <div class="banner1">
+                <div class="cont1">
+                    <div class="text1">РАСПРОДАЖА</div>
+                </div>
+                    <div class="text2">ПЕРЕЙТИ К ТОВАРАМ</div>
+                <div class="cont2">
+                    <img src="img/BannerImages/Hexagon.png" alt="Скидки до 60%">
+                    <div class="text3">СКИДКИ до <span class="inc">60%</span></div>
+                </div>
+                <img src="img/BannerImages/mainBanner.png" alt="Распродажа">
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="banner2">
+                <div class="cont3">
+                    <div class="text4">С НАМИ БУДЕТ СВЕТЛО</div>
+                </div>
+                <a href="" class="det">Подробнее</a>
+                <img src="img/BannerImages/bannerLogo.png" alt="Лого" class="logo-place">
+                <img src="img/BannerImages/second.png" alt="С нами будет светло">
+            </div>
+            <div class="banner3">
+                <img src="img/BannerImages/bant.png" alt="Бантик" class="bow-place">
+                <div class="Ak">АКЦИЯ</div>
+                <div class="cont4">
+                    <div class="text5">Лампочка для люстр в подарок</div>
+                </div>
+                <a href="" class="det2">Подробнее</a>
+                <img src="img/BannerImages/second2.png" alt="Акция">
+            </div>
+        </div>
+    </section>
+    <section class="Selector">
+        <h2>ИНТЕРНЕТ-МАГАЗИН СВЕТИЛЬНИКОВ LIGHT</h2>
+    </section>
+    <section class="Selector">
+        <div class="tile-container">
+            <a href="">
+                <div class="gr1">
+                    <div class="line"></div>
+                    <div>ЛЮСТРЫ</div>
+                    <div class="line"></div>
+                </div>
+            </a>
+            <a href="">
+                <div class="gr2">
+                    <div class="line"></div>
+                    <div>БРА</div>
+                    <div class="line"></div>
+                </div>
+            </a>
+            <a href="">
+                <div class="gr3">
+                    <div class="line"></div>
+                    <div>ТОРШЕРЫ</div>
+                    <div class="line"></div>
+                </div>
+            </a>
+            <a href="">
+                <div class="gr4">
+                    <div class="line"></div>
+                    <div>ПОТОЛОЧНЫЕ СВЕТИЛЬНИКИ</div>
+                    <div class="line"></div>
+                </div>
+            </a>
+            <a href="">
+                <div class="gr5">
+                    <div class="line"></div>
+                    <div>НАСТОЛЬНЫЕ ЛАМПЫ</div>
+                    <div class="line"></div>
+                </div>
+            </a>
+            <a href="">
+                <div class="gr6">
+                    <div class="line"></div>
+                    <div>ВСТРАИВАЕМЫЕ СВЕТИЛЬНИКИ</div>
+                    <div class="line"></div>
+                </div>
+            </a>
+            <a href="">
+                <div class="gr7">
+                    <div class="line"></div>
+                    <div>УЛИЧНЫЕ СВЕТИЛЬНИКИ</div>
+                    <div class="line"></div>
+                </div>
+            </a>
+            <a href="">
+                <div class="gr8">
+                    <div class="line"></div>
+                    <div>ЛАМПОЧКИ</div>
+                    <div class="line"></div>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="Hit">
+        <h2>ХИТЫ ПРОДАЖ</h2>
+        <div class="gallery-container">
+            <button class="gallery-arrow1 arrow-left">&#10094;</button>
+            <div class="gallery-item">
+                <div class="gallery-item-content">
+                    <img src="img/ProductImages/torsher.png" alt="Подвесная люстра Mytony Grazia">
+                    <div class="description">Подвесная люстра Mytony Grazia MODO46PL-08CH</div>
+                    <div class="price">19'677 ₽</div>
+                    <div class="old-price">29'370 ₽</div>
+                    <a href="#" class="add-to-cart">В корзину</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-content">
+                    <div class="new-label2">-34%</div>
+                    <div class="new-label3">экономия 580р</div>
+                    <img src="img/ProductImages/podves.png" alt="Подвесная люстра Mytony Grazia">
+                    <div class="description">Подвесная люстра Mytony Grazia MODO46PL-08CH</div>
+                    <div class="price">9'677 ₽</div>
+                    <div class="old-price">29'370 ₽</div>
+                    <a href="#" class="add-to-cart">В корзину</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-content">
+                    <img src="img/ProductImages/svetilnik.png" alt="Подвесная люстра Mytony Grazia">
+                    <div class="description">Подвесная люстра Mytony Grazia MODO46PL-08CH</div>
+                    <div class="price">9'677 ₽</div>
+                    <div class="old-price">29'370 ₽</div>
+                    <a href="#" class="add-to-cart">В корзину</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-content">
+                    <div class="new-label2">-34%</div>
+                    <div class="new-label3">экономия 580р</div>
+                    <img src="img/ProductImages/lustra.png" alt="Подвесная люстра Mytony Grazia">
+                    <div class="description">Подвесная люстра Mytony Grazia MODO46PL-08CH</div>
+                    <div class="price">119'677 ₽</div>
+                    <div class="old-price">29'370 ₽</div>
+                    <a href="#" class="add-to-cart">В корзину</a>
+                </div>
+            </div>
+            <button class="gallery-arrow1 arrow-right">&#10095;</button>
+        </div>
+    </section>
+    
+    <section class="New">
+        <h2>НОВИНКИ</h2>
+        <div class="gallery-container">
+            <button class="gallery-arrow1 arrow-left">&#10094;</button>
+            <div class="gallery-item">
+                <div class="gallery-item-content">
+                    <div class="new-label">New</div>
+                    <img src="img/ProductImages/torsher.png" alt="Подвесная люстра Mytony Grazia">
+                    <div class="description">Подвесная люстра Mytony Grazia MODO46PL-08CH</div>
+                    <div class="price">19'677 ₽</div>
+                    <div class="old-price">29'370 ₽</div>
+                    <a href="#" class="add-to-cart">В корзину</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-content">
+                    <div class="new-label">New</div>
+                    <img src="img/ProductImages/podves.png" alt="Подвесная люстра Mytony Grazia">
+                    <div class="description">Подвесная люстра Mytony Grazia MODO46PL-08CH</div>
+                    <div class="price">9'677 ₽</div>
+                    <div class="old-price">29'370 ₽</div>
+                    <a href="#" class="add-to-cart">В корзину</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-content">
+                    <div class="new-label">New</div>
+                    <img src="img/ProductImages/svetilnik.png" alt="Подвесная люстра Mytony Grazia">
+                    <div class="description">Подвесная люстра Mytony Grazia MODO46PL-08CH</div>
+                    <div class="price">9'677 ₽</div>
+                    <div class="old-price">29'370 ₽</div>
+                    <a href="#" class="add-to-cart">В корзину</a>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="gallery-item-content">
+                    <div class="new-label">New</div>
+                    <img src="img/ProductImages/lustra.png" alt="Подвесная люстра Mytony Grazia">
+                    <div class="description">Подвесная люстра Mytony Grazia MODO46PL-08CH</div>
+                    <div class="price">119'677 ₽</div>
+                    <div class="old-price">29'370 ₽</div>
+                    <a href="#" class="add-to-cart">В корзину</a>
+                </div>
+            </div>
+            <button class="gallery-arrow1 arrow-right">&#10095;</button>
+        </div>
+    </section>
+    <section class="stl">
+        <h2>СТИЛИ</h2>
+        <div class="style-container">
+            <button class="gallery-arrow1 arrow-left">&#10094;</button>
+            <a href="">
+                <div class="style1">
+                    <div class="line2"></div>
+                    <div>СКАНДИНАВСКИЙ</div>
+                    <div class="line2"></div>
+                </div>
+            </a>
+            <a href="">
+                <div class="style2">
+                    <div class="line2"></div>
+                    <div>ЛОФТ</div>
+                    <div class="line2"></div>
+                </div>
+            </a>
+            <a href="">
+                <div class="style3">
+                    <div class="line2"></div>
+                    <div>ПРОВАНС</div>
+                    <div class="line2"></div>
+                </div>
+            </a>
+            <a href="">
+                <div class="style4">
+                    <div class="line2"></div>
+                    <div>СОВРЕМЕННЫЙ</div>
+                    <div class="line2"></div>
+                </div>
+            </a>
+            <button class="gallery-arrow1 arrow-right">&#10095;</button>
+        </div>
+    </section>
+    <section class="Brand">
+        <h2>БРЕНДЫ</h2>
+        <div class="style-container">
+            <button class="gallery-arrow2 arrow-left">&#10094;</button>
+            <a href="">
+                <div class="brand1">
+                    <img src="img/StyleImages/logo5.png" alt="ARTE">
+                </div>
+            </a>
+            <a href="">
+                <div class="brand2">
+                    <img src="img/StyleImages/logo4.png" alt="CITILUX">
+                </div>
+            </a>
+            <a href="">
+                <div class="brand3">
+                    <img src="img/StyleImages/logo3.png" alt="EGLO">
+                </div>
+            </a>
+            <a href="">
+                <div class="brand4">
+                    <img src="img/StyleImages/logo2.png" alt="EVROSVET">
+                </div>
+            </a>
+            <a href="">
+                <div class="brand5">
+                    <img src="img/StyleImages/logo1.png" alt="FAVOURITE">
+                </div>
+            </a>
+            <button class="gallery-arrow2 arrow-right">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="About">
+        <img src="icon/lamp.png" alt="Светильник">
+        <div>
+            <h2>Об интернет-магазине</h2>
+            <p>В нашем магазине представлено свыше 100 000 светильников из России, Китая и таких европейских стран, как Австрия, Бельгия, Великобритания, Германия, Испания, Италия, Чехия. У нас можно купить освещение для спальни, гостиной, кухни, коридора, ванной и детской комнаты.</p>
+            <p>Мы регулярно обновляем наш ассортимент и делаем так, чтобы светильники у нас могли купить все, вне зависимости от покупательской способности. Поэтому у нас есть как продукция эконом-класса по демократичным ценам, так и товар премиум-класса по более высокой стоимости.</p>
+            <p>Доставку заказов мы выполняем в Тулу и в другие города Тульской области – Новомосковск, Донской, Алексин, Щекино, Ефремов, Богородицк, Плавск и прочие населенные пункты. Отправку производим любой транспортной или курьерской компанией на Ваш выбор (Деловые линии, ПЭК, СДЭК, Voxberry). Обращаем ваше внимание, что ограничений на минимальную стоимость заказа для доставки в регионы у нас нет.</p>
+            <div class="detail"><a href="#">Подробнее о нашей компании</a></div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+        <section class="catalog">
+            <h4>КАТАЛОГ</h4>
+            <ul>
+                <li><a href="#">Светильники</a></li>
+                <li><a href="#">Люстры и потолочные светильники</a></li>
+                <li><a href="#">Настенные светильники</a></li>
+                <li><a href="#">Настольные лампы</a></li>
+                <li><a href="#">Торшеры напольные</a></li>
+                <li><a href="#">Точечные светильники</a></li>
+                <li><a href="#">Уличные светильники</a></li>
+                <li><a href="#">Лампочки</a></li>
+            </ul>
+        </section>
+        <section class="buyers">
+            <h4>ПОКУПАТЕЛЯМ</h4>
+            <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Оплата и доставка</a></li>
+                <li><a href="#">Гарантии и возврат товара</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Распродажа</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Карта сайта</a></li>
+            </ul>
+        </section>
+        <section class="contacts">
+            <div class="fix">
+                <img src="icon/clock.png">
+                <h4>КОНТАКТЫ</h4>
+            </div>
+                <div class="ph">
+                    <img src="icon/whiteTel.png" alt="Телефон">
+                    <div>
+                        <span>8-800-551-39-31</span>
+                        <p>Звонок по России бесплатный</p>
+                        <a href="tel:8-800-551-39-31">Заказать обратный звонок</a>
+                    </div>
+                </div>
+                <div class="email">
+                    <img src="icon/mail.png" alt="">
+                    <a href="mailto:info@lstr-shop.ru">info@lstr-shop.ru</a></div>
+                <div class="adress">
+                    <img src="icon/WhiteLoc.png" alt="Адреса">
+                    <div>
+                        <p>Адреса пунктов самовывоза:</p>
+                        <p>г. Тула, ул. Чмутова, д. 158 В</p>
+                        <p>д. Нижнее Елькино, 77</p>
+                        <p>г. Тула, пр. Ленина, д.85, 1эт., оф.5</p>
+                        <a href="#">Посмотреть все адреса в Туле</a>    
+                    </div>
+                </div>
+                <div class="dec">
+                    <img src="icon/WhiteClock.png" alt="Время работы">
+                    <a href=""> с 9 до 23 часов без выходных</a>
+                </div>
+        </section>
+        </div>
+        <section class="legal">
+            <p>&copy; 2022 «Свет, Тула. Интернет-магазин люстр. Все права защищены. При копировании материалов, ссылка на сайт обязательна.</p> 
+            <p>Вся информация на сайте относительно размеров, параметров, комплектации, технических характеристик, комплектующих и стоимости светильников и прочих товаров, носит информационный характер и не</p> 
+            <p>является публичной офертой, определяемой положением Статьи 437 (2) Гражданского кодекса Российской Федерации. Для получения подробной информации звоните по телефонам: 8-800-551-39-31</p>
+        </section>
+    </footer>
+</body>
+</html>

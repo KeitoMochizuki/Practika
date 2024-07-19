@@ -1,0 +1,305 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+html{height:100%}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+
+*{
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'ExtraBold';
+    src: url(./font/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'Regular';
+    src: url(./font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Medium';
+    src: url(./font/Montserrat-Medium.ttf);
+}
+header{
+    font-family: 'Regular';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9vw;
+    background-color: white;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.up{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo img{
+    width: 8.5vw;
+
+}
+
+.form{
+    display: flex;
+    gap: 0.5vw;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Regular';
+    font-size: 1vw;
+    height: 2vw;
+    width: 16vw;
+    border:solid 0.1vw black;
+    padding: 0.2vw;
+    border-radius: 2vw;
+}
+
+.srchbttn{
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.searchicon{
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.form input{
+    height: 1.5vw;
+    width: 80%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1vw;
+}
+
+.label{
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.label img{
+    height: 1.5vw;
+    width: 1.5vw;
+}
+
+.label a{
+    text-decoration: none;
+    text-decoration: underline;
+    color: black;
+}
+
+#tel a{
+    text-decoration: none;
+    color: black;
+}
+
+.cart{
+    font-size: 1vw;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: flex;
+    width: 7vw;
+    height: 2vw;
+    background-color: black;
+    border-radius: 2vw;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.1vw;
+}
+
+.cart img{
+    padding-top: 0.1vw;
+    height: 1.5vw;
+    width: 1.5vw;
+}
+
+.icon img{
+    height: 1.5vw;
+    width: 1.5vw;
+}
+
+.down{
+   width: 100%; 
+   background-color: rgba(255, 217, 0, 0.76);
+}
+.navigation {
+    font-family: 'Medium';
+    font-size: 0.7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    font-weight: bold;
+    padding-top: 0.7vw;
+    padding-bottom: 0.7vw;
+}
+
+
+
+.frame {
+    border-radius: 2vw;
+    padding: 0.2vw;
+    width: 10vw;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.drop{
+    margin-right: 0 auto;
+    position: relative;
+    display: inline-block;
+}
+
+.droplist{
+    position: absolute;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    width:10vw;
+    background-color:rgba(255, 217, 0, 0.76);
+    padding: 0.3vw;
+}
+
+.drop button{
+    font-size: 0.8vw;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.drop:hover .droplist{
+    display: block;
+}
+
+.link-container{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    align-items: center;
+}
+
+.droplink{
+    display: block;
+    background-color: transparent;
+    font-size: 1vw;
+}
+
+.company{
+    margin-left: 10vw;
+    color: black;
+}
+
+.dec{
+    display: flex;
+}
+
+.dec a{
+    margin-right: 2vw;
+    color: black;
+    text-decoration: none;
+    font-size:0.7vw;
+}
+
+
+
+
+
+
+.footer {
+    background-color: black;
+    padding-top: 3vw;
+    color:white
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer section {
+    flex: 1;
+    margin-left: 10vw;
+}
+.footer section:last-child {
+    margin-right: 0;
+}
+.footer h4 {
+    font-size: 1.5vw;
+    font-family: 'Medium';
+    color: rgba(255, 255, 0, 0.815);
+    margin-bottom: 1vw;
+}
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+.footer ul li {
+    margin-bottom: 0.9em;
+    display: flex;
+    align-items: center;
+}
+.contacts p, .catalog a, .buyers a{
+    margin: 0;
+    font-size: 1vw;
+    font-family: 'Regular';
+    color:white
+}
+.contacts a{
+    color: white;
+    font-size: 1vw;
+    font-family: 'Regular';
+}
+
+.fix{
+    display: flex;
+    gap: 0.5vw;
+}
+
+.ph, .email, .adress, .dec{
+    display: flex;
+    margin-bottom: 1em;
+    gap: 0.5vw;
+}
+.ph span{
+    font-size: 1.5vw;
+    font-family: 'Regular';
+}
+.dec{
+    text-decoration: underline;
+    align-items: center;
+}
+
+.legal {
+    text-align: center;
+    font-size: 0.8vw;
+    color: #666;
+}
+
+.legal p{
+    margin: 0;
+}
+
+.ph img, .email img, .adress img, .dec img, .fix img{
+    width: 1.2vw;
+    height: 1.2vw;
+    position: relative;
+}
+.ph img{
+    margin-top: 0.3vw;
+}
